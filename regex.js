@@ -17,7 +17,6 @@ status: Approved
 `
 
 /* 
-
 Regular Expression 1: Phone Number 
 - Format to match: ###-###-#### 
 - Planned usage: Will be used to parse out all phone numbers in that format in any given string. The phone numbers should be saved in an array. Make sure it captures ALL phone 
@@ -31,7 +30,8 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
+let phoneReg = sampleApp.match(/\d{3}-\d{3}-\d{4}/ig)
+console.log(phoneReg)
 
 /* 
 
@@ -51,7 +51,8 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
+let emailReg = sampleApp.match(/\w+@\w+.\w+/ig)
+console.log(emailReg)
 
 /* 
 
@@ -67,4 +68,5 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = sampleApp.search(/Status/ig)
+console.log(statusReg)
